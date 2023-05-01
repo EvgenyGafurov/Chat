@@ -13,7 +13,7 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 400px;
+    width: 70%;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgba(0,0,0,.5);
@@ -72,9 +72,10 @@ html {
   }
   
   .login-box form a,
-  .registration-box a {
+  .registration-box a,
+  .button-ok {
     position: relative;
-    display: inline-block;
+    display: flex;
     padding: 10px 20px;
     color: #03e9f4;
     font-size: 16px;
@@ -87,7 +88,8 @@ html {
   }
   
   .login-box a:hover,
-  .registration-box a:hover {
+  .registration-box a:hover,
+  .button-ok:hover {
     background: #03e9f4;
     color: #fff;
     border-radius: 5px;
@@ -98,7 +100,8 @@ html {
   }
   
   .login-box a span,
-  .registration-box a span {
+  .registration-box a span,
+  .button-ok span {
     position: absolute;
     display: block;
   }
@@ -181,4 +184,58 @@ html {
       bottom: 100%;
     }
   }
+
+
+  .rooms-chat{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+
+  .modal-error{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45%;
+    height: 30%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .rooms1,
+  .rooms2,
+  .rooms3{
+    position: relative;
+    display: inline-table;
+    top:10%;
+    left:10%;
+    width: 20%;
+    height: 70%;
+    
+    margin-top: 5%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.575);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    color: #fff;
+    z-index: 10;
+  
+  }
+
   
